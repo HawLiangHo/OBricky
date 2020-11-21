@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown1"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputEmail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:layout_marginStart="40dp"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeusername"
+                android:hint="Email"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:inputType="textPostalAddress"
+                android:padding="15dp"
+                android:layout_marginEnd="40dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            android:layout_marginStart="40dp"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeusername"
+                android:hint="Address"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:inputType="text"
+                android:padding="15dp"
+                android:layout_marginEnd="40dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="15"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            app:passwordToggleEnabled="true"
+            android:layout_marginStart="40dp"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeusername"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:layout_marginEnd="40dp"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="15"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgray"
+            app:passwordToggleEnabled="true"
+            android:layout_marginStart="40dp"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapeusername"
+                android:hint="Confirm Password"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:layout_marginEnd="40dp"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp">-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:shadowColor="@android:color/transparent"
+                android:padding="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="50dp"
+                android:onClick="btnSignUp_onClicked"
+                android:background="@drawable/shapelogin"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowItem">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/brown1" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="Purchase This Phone?"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="28dp"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.088"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/ivShowImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_huawei"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/brown2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="270dp"
+        android:stretchColumns="2">
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Phone ID"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvPhoneId"
+                android:layout_width="0dp"
+                android:text="Phone ID "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvPhoneName"
+                android:layout_width="0dp"
+                android:text="Phone Name "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Network Technology"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvNetworkTechnology"
+                android:layout_width="0dp"
+                android:text="Network Tech. "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Body Dimensions"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:lines="2"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvBodyDimensions"
+                android:text="Body Dimensions "
+                android:textSize="15dp"
+                android:lines="2"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Display Type"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvDisplayType"
+                android:layout_width="0dp"
+                android:text="Display Type "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Storage/Memory"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvStorage"
+                android:layout_width="0dp"
+                android:text="Storage/Memory "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Main Camera"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:lines="2"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvMainCamera"
+                android:layout_width="0dp"
+                android:text="Main Camera "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:lines="2"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Selfie Camera"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvSelfieCamera"
+                android:text="Selfie Camera "
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Comms"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvComms"
+                android:layout_width="0dp"
+                android:text="Comms "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Battery"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvBattery"
+                android:layout_width="0dp"
+                android:text="Battery "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text=" Price"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="0dp"
+                android:text="RM 0.00 "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:background="@drawable/shapeborder"
+                android:padding="3dip" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Purchase"
+        android:background="@drawable/shapelogin"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

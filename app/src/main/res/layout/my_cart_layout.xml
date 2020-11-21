@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/check_appointment_table_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <TableLayout
+        android:id="@+id/layout_table2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="5dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/ivImage2"
+                android:layout_marginStart="20dp"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_phone_icon"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/ivImage2"
+                android:layout_toEndOf="@+id/ivImage2"
+                android:gravity="center"
+                android:text="Order ID: #1"
+                android:background="@color/white"
+                android:textAlignment="center"
+                android:textColor="@color/darkgray"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPhoneId"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/ivImage2"
+                android:layout_below="@+id/tvOrderId"
+                android:gravity="center"
+                android:text="Phone Id: #1"
+                android:background="@color/white"
+                android:textAlignment="center"
+                android:textColor="@color/darkgray"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/ivImage2"
+                android:layout_below="@+id/tvPhoneId"
+                android:gravity="center"
+                android:text="Status: #1"
+                android:background="@color/white"
+                android:textAlignment="center"
+                android:textColor="@color/darkgray"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+        </RelativeLayout>
+
+    </TableLayout>
+
+
+</RelativeLayout>

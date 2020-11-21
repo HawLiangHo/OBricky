@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nv">
+    <group android:checkableBehavior="single">
+        <item android:title="General">
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/reload"
+                        android:title="Reload Credit"
+                        android:icon="@drawable/ic_reload"/>
+
+                    <item
+                        android:id="@+id/myCart"
+                        android:title="My Cart"
+                        android:icon="@drawable/ic_cart"/>
+
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Settings">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/profile"
+                        android:title="Profile"
+                        android:icon="@drawable/ic_profile"/>
+
+                    <item
+                        android:id="@+id/password"
+                        android:title="Change password"
+                        android:icon="@drawable/ic_password"/>
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout"/>
+
+    </group>
+</menu>

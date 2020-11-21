@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile"
+    android:background="@color/brown1"
+    >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Profile"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="36dp"
+
+        />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="80dp"
+            app:errorEnabled="true"
+
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ETEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:hint="Email"
+                android:background="@drawable/shapeusername"
+                android:textColorHint="@color/darkgray"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            app:errorEnabled="true"
+
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ETAdress"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/shapeusername"
+                android:hint="Address"
+                android:lines="4"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/darkgray"
+                android:textSize="30dp"
+                android:padding="8dp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/shapelogin"
+        android:onClick="btnSave_onClick"
+        android:text="Update" />
+
+</LinearLayout>
