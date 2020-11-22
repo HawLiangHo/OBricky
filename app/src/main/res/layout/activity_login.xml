@@ -12,15 +12,23 @@
     android:background="@color/brown1"
     >
 
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/ic_obricky"
+        android:background="@drawable/shapelogin"
+        android:layout_marginBottom="10dp"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="O'Bricky"
         android:textAlignment="center"
-        android:textSize="40sp"
+        android:textSize="50sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:background="@color/brown2"
         android:fontFamily="sans-serif"
         />
 
@@ -32,17 +40,7 @@
         android:textSize="24sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:background="@color/brown2"
         android:fontFamily="sans-serif"
-        android:layout_marginBottom="20dp"
-        />
-
-    <ImageView
-        android:id="@+id/ivIcon"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:src="@mipmap/ic_obricky"
-        android:background="@drawable/shapelogin"
         android:layout_marginBottom="20dp"
         />
 
