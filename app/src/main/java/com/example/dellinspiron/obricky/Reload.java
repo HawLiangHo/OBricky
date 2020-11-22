@@ -28,13 +28,16 @@ public class Reload extends AppCompatActivity {
     private int id;
     private float totalAmt;
     private String password;
-    TextView mTvCredit;
+
+    EditText mETCardNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reload);
-//        mTvCredit = findViewById(R.id.tvBalance);
+
+        mETCardNum = findViewById(R.id.eTCardNumber);
+
         layoutAmount = findViewById(R.id.textInputAmount);
         layoutPassword = findViewById(R.id.textInputPass);
 
@@ -44,10 +47,42 @@ public class Reload extends AppCompatActivity {
 
 //        mTvCredit.setText("RM " + totalAmt + ".00");
 
+        mETCardNum.addTextChangedListener(new TextWatcher() {
+            int count = 0;
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+
+            public void afterTextChanged(Editable s) {
+                int inputlength = mETCardNum.getText().toString().length();
+
+                if (count <= inputlength && inputlength == 4 || inputlength == 9 || inputlength == 14){
+                    mETCardNum.setText(mETCardNum.getText().toString() + " ");
+
+                    int temp = mETCardNum.getText().length();
+                    mETCardNum.setSelection(temp);
+
+                } else if (count >= inputlength && (inputlength == 4 || inputlength == 9 || inputlength == 14)) {
+                    mETCardNum.setText(mETCardNum.getText().toString().substring(0, mETCardNum.getText().toString().length() - 1));
+
+                    int temp = mETCardNum.getText().length();
+                    mETCardNum.setSelection(temp);
+                }
+                count = mETCardNum.getText().toString().length();
+            }
+        });
+
     }
 
     public void btnReload_onClicked(View view) {
-        if (!validateAmount() | !validatePassword()){
+        if (!validateCardNumber() | !validateAmount() | !validatePassword()){
             return;
         } else {
             openConfirmationReload();
@@ -82,6 +117,21 @@ public class Reload extends AppCompatActivity {
 
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    private boolean validateCardNumber() {
+        String cardNum = mETCardNum.getText().toString();
+
+        if (cardNum.isEmpty()){
+            mETCardNum.setError("This field cannot be empty!");
+            return false;
+        } else if (cardNum.length() != 19){
+            mETCardNum.setError("Please enter only 16 digit number!");
+            return false;
+        } else {
+            mETCardNum.setError(null);
+            return true;
+        }
     }
 
     private boolean validateAmount(){

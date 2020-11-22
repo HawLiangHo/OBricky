@@ -39,7 +39,7 @@
             android:id="@+id/tvReloadTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="80dp"
+            android:layout_marginBottom="40dp"
             android:layout_gravity="center"
             android:text="Reload"
             android:textColor="@android:color/white"
@@ -52,10 +52,36 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#D5D8D8"
+            android:paddingBottom="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            app:counterMaxLength="19"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            android:textColorHint="#D5D8D8">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/eTCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card No."
+                android:background="@drawable/shapeusername"
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:padding="15dp"
+                android:textColor="#D5D8D8"
+                android:textColorHint="#D5D8D8" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
             android:id="@+id/textInputAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="70dp"
+            android:paddingBottom="20dp"
             android:layout_marginEnd="50dp"
             android:layout_marginStart="50dp"
             app:errorEnabled="true"
@@ -80,7 +106,8 @@
             android:id="@+id/textInputPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="70dp"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="10dp"
             app:errorEnabled="true"
             android:layout_marginEnd="50dp"
             android:layout_marginStart="50dp"

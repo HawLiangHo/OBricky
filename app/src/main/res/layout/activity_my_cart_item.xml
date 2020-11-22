@@ -51,11 +51,11 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout2"
         android:layout_width="match_parent"
-        android:layout_height="265dp"
+        android:layout_height="250dp"
         android:layout_marginBottom="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="460dp"
         android:background="@color/brown2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +67,7 @@
     </android.support.design.widget.TextInputLayout>
 
     <TableLayout
-        android:layout_width="370dp"
+        android:layout_width="350dp"
         android:layout_height="117dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -91,6 +91,7 @@
                 android:gravity="right"
                 android:padding="3dip"
                 android:text="Phone ID "
+                android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </TableRow>
@@ -112,6 +113,7 @@
                 android:gravity="right"
                 android:padding="3dip"
                 android:text="Phone Name "
+                android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </TableRow>
@@ -122,7 +124,7 @@
                 android:layout_column="1"
                 android:background="@drawable/shapeborder"
                 android:padding="3dip"
-                android:text=" Status: "
+                android:text=" Status "
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -133,6 +135,7 @@
                 android:gravity="right"
                 android:padding="3dip"
                 android:text="Info Received "
+                android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold" />
         </TableRow>

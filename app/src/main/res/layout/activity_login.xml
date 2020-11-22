@@ -15,11 +15,24 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="O'Bricky\nYour Online Smartphone Vendor"
+        android:text="O'Bricky"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/brown2"
+        android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Online Smartphone Vendor"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@color/brown2"
         android:fontFamily="sans-serif"
         android:layout_marginBottom="20dp"
         />
@@ -38,6 +51,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#D5D8D8"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
         android:textColorHint="@color/darkgray">
 
         <android.support.design.widget.TextInputEditText
@@ -61,7 +76,9 @@
         app:counterMaxLength="15"
         app:counterEnabled="true"
         app:errorEnabled="true"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
         android:textColor="#D5D8D8"
         android:textColorHint="@color/darkgray"
         app:passwordToggleEnabled="true"
@@ -83,33 +100,43 @@
     </android.support.design.widget.TextInputLayout>
 
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Log In"
-        android:shadowColor="@android:color/transparent"
-        android:padding="15dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="20dp"
-        android:onClick="btnLogin_onClicked"
-        android:background="@drawable/shapelogin"/>
 
-    <Button
-        android:id="@+id/btnSignUp"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:shadowColor="@android:color/transparent"
-        android:padding="15dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="0dp"
-        android:onClick="btnSignUp_onClicked"
-        android:background="@drawable/shapesignup"
-        android:textColor="@color/black"/>
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="btnLogin_onClicked"
+            android:background="@drawable/shapelogin"/>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:onClick="btnSignUp_onClicked"
+            android:background="@drawable/shapesignup"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
