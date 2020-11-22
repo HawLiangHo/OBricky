@@ -40,8 +40,8 @@ public class Profile extends AppCompatActivity {
         mETEMail = findViewById(R.id.ETEmail);
         mETAddress = findViewById(R.id.ETAdress);
 
-        mLayoutEmail = findViewById(R.id.layout_username);
-        mLayoutAddress = findViewById(R.id.layout_address);
+        mLayoutEmail = findViewById(R.id.layoutEmail);
+        mLayoutAddress = findViewById(R.id.layoutAddress);
 
         Bundle i = getIntent().getExtras();
 
